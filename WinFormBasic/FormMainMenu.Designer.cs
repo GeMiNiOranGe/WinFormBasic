@@ -28,8 +28,6 @@
             this.btnSum2Para = new System.Windows.Forms.Button();
             this.btnCheckMFO = new System.Windows.Forms.Button();
             this.btnAddName = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnSumSeries
@@ -72,21 +70,11 @@
             this.btnAddName.UseVisualStyleBackColor = true;
             this.btnAddName.Click += new System.EventHandler(this.btnAddName_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(178, 138);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(144, 144);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
             // frmMainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 361);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnAddName);
             this.Controls.Add(this.btnCheckMFO);
             this.Controls.Add(this.btnSum2Para);
@@ -97,7 +85,6 @@
             this.Name = "frmMainMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Retarded project";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -108,6 +95,5 @@
         private System.Windows.Forms.Button btnSum2Para;
         private System.Windows.Forms.Button btnCheckMFO;
         private System.Windows.Forms.Button btnAddName;
-        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

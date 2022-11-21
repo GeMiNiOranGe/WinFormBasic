@@ -14,6 +14,8 @@ namespace WinFormBasic {
             InitializeComponent();
         }
 
+        //pictureBox1.Image = new Bitmap(Application.StartupPath.Replace(@"\bin\Debug", string.Empty) + @"\icon\PopCat.gif");
+
         private void btnSumSeries_Click(object sender, EventArgs e) {
             new frmSumSeries().Show();
         }
@@ -28,11 +30,6 @@ namespace WinFormBasic {
 
         private void btnAddName_Click(object sender, EventArgs e) {
             new frmAddNames().Show();
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e) {
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.Image = new Bitmap(Application.StartupPath + "\\icon\\PopCat.gif");
         }
     }
 }
