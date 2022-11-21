@@ -28,6 +28,7 @@
             this.btnSum2Para = new System.Windows.Forms.Button();
             this.btnCheckMFO = new System.Windows.Forms.Button();
             this.btnAddName = new System.Windows.Forms.Button();
+            this.btnFindMaxAndMin = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnSumSeries
@@ -70,11 +71,22 @@
             this.btnAddName.UseVisualStyleBackColor = true;
             this.btnAddName.Click += new System.EventHandler(this.btnAddName_Click);
             // 
+            // btnFindMaxAndMin
+            // 
+            this.btnFindMaxAndMin.Location = new System.Drawing.Point(12, 66);
+            this.btnFindMaxAndMin.Name = "btnFindMaxAndMin";
+            this.btnFindMaxAndMin.Size = new System.Drawing.Size(89, 48);
+            this.btnFindMaxAndMin.TabIndex = 0;
+            this.btnFindMaxAndMin.Text = "Tìm số lớn và nhỏ nhất";
+            this.btnFindMaxAndMin.UseVisualStyleBackColor = true;
+            this.btnFindMaxAndMin.Click += new System.EventHandler(this.btnFindMaxAndMin_Click);
+            // 
             // frmMainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 361);
+            this.Controls.Add(this.btnFindMaxAndMin);
             this.Controls.Add(this.btnAddName);
             this.Controls.Add(this.btnCheckMFO);
             this.Controls.Add(this.btnSum2Para);
@@ -95,5 +107,6 @@
         private System.Windows.Forms.Button btnSum2Para;
         private System.Windows.Forms.Button btnCheckMFO;
         private System.Windows.Forms.Button btnAddName;
+        private System.Windows.Forms.Button btnFindMaxAndMin;
     }
 }

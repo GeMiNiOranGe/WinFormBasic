@@ -58,6 +58,12 @@
     <Compile Include="FormAddNames.Designer.cs">
       <DependentUpon>FormAddNames.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormFindMinAndMax.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFindMinAndMax.Designer.cs">
+      <DependentUpon>FormFindMinAndMax.cs</DependentUpon>
+    </Compile>
     <Compile Include="HandleMain.cs" />
     <Compile Include="FormMainMenu.cs">
       <SubType>Form</SubType>
@@ -84,6 +90,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormCheckMaleFemaleOther.resx">
       <DependentUpon>FormCheckMaleFemaleOther.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFindMinAndMax.resx">
+      <DependentUpon>FormFindMinAndMax.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMainMenu.resx">
       <DependentUpon>FormMainMenu.cs</DependentUpon>

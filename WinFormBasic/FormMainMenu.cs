@@ -31,5 +31,9 @@ namespace WinFormBasic {
         private void btnAddName_Click(object sender, EventArgs e) {
             new frmAddNames().Show();
         }
+
+        private void btnFindMaxAndMin_Click(object sender, EventArgs e) {
+            new frmFindMinAndMax().Show();
+        }
     }
 }
