@@ -31,6 +31,7 @@
             this.btnFindMaxAndMin = new System.Windows.Forms.Button();
             this.btnReadNumbers = new System.Windows.Forms.Button();
             this.btnCreateForm = new System.Windows.Forms.Button();
+            this.btnMenuFood = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnSumSeries
@@ -103,6 +104,16 @@
             this.btnCreateForm.UseVisualStyleBackColor = true;
             this.btnCreateForm.Click += new System.EventHandler(this.btnCreateForm_Click);
             // 
+            // btnMenuFood
+            // 
+            this.btnMenuFood.Location = new System.Drawing.Point(427, 12);
+            this.btnMenuFood.Name = "btnMenuFood";
+            this.btnMenuFood.Size = new System.Drawing.Size(77, 48);
+            this.btnMenuFood.TabIndex = 0;
+            this.btnMenuFood.Text = "Thực đơn";
+            this.btnMenuFood.UseVisualStyleBackColor = true;
+            this.btnMenuFood.Click += new System.EventHandler(this.btnMenuFood_Click);
+            // 
             // frmMainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -110,6 +121,7 @@
             this.ClientSize = new System.Drawing.Size(584, 361);
             this.Controls.Add(this.btnFindMaxAndMin);
             this.Controls.Add(this.btnCreateForm);
+            this.Controls.Add(this.btnMenuFood);
             this.Controls.Add(this.btnReadNumbers);
             this.Controls.Add(this.btnAddName);
             this.Controls.Add(this.btnCheckMFO);
@@ -134,5 +146,6 @@
         private System.Windows.Forms.Button btnFindMaxAndMin;
         private System.Windows.Forms.Button btnReadNumbers;
         private System.Windows.Forms.Button btnCreateForm;
+        private System.Windows.Forms.Button btnMenuFood;
     }
 }

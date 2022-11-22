@@ -43,5 +43,9 @@ namespace WinFormBasic {
         private void btnCreateForm_Click(object sender, EventArgs e) {
             new frmCreateCustomForm().Show();
         }
+
+        private void btnMenuFood_Click(object sender, EventArgs e) {
+            new frmMenuFood().Show();
+        }
     }
 }

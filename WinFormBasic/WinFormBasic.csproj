@@ -70,6 +70,12 @@
     <Compile Include="FormFindMinAndMax.Designer.cs">
       <DependentUpon>FormFindMinAndMax.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormMenuFood.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMenuFood.Designer.cs">
+      <DependentUpon>FormMenuFood.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormOutputCreated.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,6 +123,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormMainMenu.resx">
       <DependentUpon>FormMainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMenuFood.resx">
+      <DependentUpon>FormMenuFood.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormOutputCreated.resx">
       <DependentUpon>FormOutputCreated.cs</DependentUpon>

@@ -30,7 +30,7 @@
             this.txtBoxFirstName = new System.Windows.Forms.TextBox();
             this.txtBoxLastName = new System.Windows.Forms.TextBox();
             this.comboBoxTitle = new System.Windows.Forms.ComboBox();
-            this.listBox = new System.Windows.Forms.ListBox();
+            this.listBoxNames = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // btnAddName
@@ -93,27 +93,31 @@
             this.comboBoxTitle.Items.AddRange(new object[] {
             "Mr.",
             "Mrs.",
+            "Ms.",
+            "Miss.",
             "Dr."});
             this.comboBoxTitle.Location = new System.Drawing.Point(15, 30);
+            this.comboBoxTitle.MaxDropDownItems = 4;
             this.comboBoxTitle.Name = "comboBoxTitle";
             this.comboBoxTitle.Size = new System.Drawing.Size(56, 24);
             this.comboBoxTitle.TabIndex = 0;
             // 
-            // listBox
+            // listBoxNames
             // 
-            this.listBox.FormattingEnabled = true;
-            this.listBox.ItemHeight = 16;
-            this.listBox.Location = new System.Drawing.Point(15, 78);
-            this.listBox.Name = "listBox";
-            this.listBox.Size = new System.Drawing.Size(404, 132);
-            this.listBox.TabIndex = 4;
+            this.listBoxNames.FormattingEnabled = true;
+            this.listBoxNames.ItemHeight = 16;
+            this.listBoxNames.Location = new System.Drawing.Point(15, 78);
+            this.listBoxNames.Name = "listBoxNames";
+            this.listBoxNames.Size = new System.Drawing.Size(404, 132);
+            this.listBoxNames.TabIndex = 4;
             // 
             // frmAddNames
             // 
+            this.AcceptButton = this.btnAddName;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(434, 224);
-            this.Controls.Add(this.listBox);
+            this.Controls.Add(this.listBoxNames);
             this.Controls.Add(this.comboBoxTitle);
             this.Controls.Add(this.txtBoxLastName);
             this.Controls.Add(this.txtBoxFirstName);
@@ -140,6 +144,6 @@
         private System.Windows.Forms.TextBox txtBoxFirstName;
         private System.Windows.Forms.TextBox txtBoxLastName;
         private System.Windows.Forms.ComboBox comboBoxTitle;
-        private System.Windows.Forms.ListBox listBox;
+        private System.Windows.Forms.ListBox listBoxNames;
     }
 }

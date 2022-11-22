@@ -15,7 +15,14 @@ namespace WinFormBasic {
         }
 
         private void btnAddName_Click(object sender, EventArgs e) {
-
+            string firstName = txtBoxFirstName.Text;
+            string lastName = txtBoxLastName.Text;
+            string title = comboBoxTitle.Text;
+            string nameToAdd = title + " " + firstName + " " + lastName;
+            listBoxNames.Items.Add(nameToAdd);
+            txtBoxFirstName.Text = "";
+            txtBoxLastName.Text = "";
+            comboBoxTitle.Text = "";
         }
     }
 }
