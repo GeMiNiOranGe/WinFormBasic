@@ -39,5 +39,9 @@ namespace WinFormBasic {
         private void btnReadNumbers_Click(object sender, EventArgs e) {
             new frmReadNumbers().Show();
         }
+
+        private void btnCreateForm_Click(object sender, EventArgs e) {
+            new frmCreateCustomForm().Show();
+        }
     }
 }

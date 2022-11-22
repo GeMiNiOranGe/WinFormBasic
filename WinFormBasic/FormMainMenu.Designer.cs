@@ -30,6 +30,7 @@
             this.btnAddName = new System.Windows.Forms.Button();
             this.btnFindMaxAndMin = new System.Windows.Forms.Button();
             this.btnReadNumbers = new System.Windows.Forms.Button();
+            this.btnCreateForm = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnSumSeries
@@ -92,12 +93,23 @@
             this.btnReadNumbers.UseVisualStyleBackColor = true;
             this.btnReadNumbers.Click += new System.EventHandler(this.btnReadNumbers_Click);
             // 
+            // btnCreateForm
+            // 
+            this.btnCreateForm.Location = new System.Drawing.Point(107, 66);
+            this.btnCreateForm.Name = "btnCreateForm";
+            this.btnCreateForm.Size = new System.Drawing.Size(105, 48);
+            this.btnCreateForm.TabIndex = 0;
+            this.btnCreateForm.Text = "Tạo form với số dòng và cột";
+            this.btnCreateForm.UseVisualStyleBackColor = true;
+            this.btnCreateForm.Click += new System.EventHandler(this.btnCreateForm_Click);
+            // 
             // frmMainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 361);
             this.Controls.Add(this.btnFindMaxAndMin);
+            this.Controls.Add(this.btnCreateForm);
             this.Controls.Add(this.btnReadNumbers);
             this.Controls.Add(this.btnAddName);
             this.Controls.Add(this.btnCheckMFO);
@@ -121,5 +133,6 @@
         private System.Windows.Forms.Button btnAddName;
         private System.Windows.Forms.Button btnFindMaxAndMin;
         private System.Windows.Forms.Button btnReadNumbers;
+        private System.Windows.Forms.Button btnCreateForm;
     }
 }
