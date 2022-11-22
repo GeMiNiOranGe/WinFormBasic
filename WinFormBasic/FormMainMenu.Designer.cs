@@ -29,6 +29,7 @@
             this.btnCheckMFO = new System.Windows.Forms.Button();
             this.btnAddName = new System.Windows.Forms.Button();
             this.btnFindMaxAndMin = new System.Windows.Forms.Button();
+            this.btnReadNumbers = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnSumSeries
@@ -81,12 +82,23 @@
             this.btnFindMaxAndMin.UseVisualStyleBackColor = true;
             this.btnFindMaxAndMin.Click += new System.EventHandler(this.btnFindMaxAndMin_Click);
             // 
+            // btnReadNumbers
+            // 
+            this.btnReadNumbers.Location = new System.Drawing.Point(344, 12);
+            this.btnReadNumbers.Name = "btnReadNumbers";
+            this.btnReadNumbers.Size = new System.Drawing.Size(77, 48);
+            this.btnReadNumbers.TabIndex = 0;
+            this.btnReadNumbers.Text = "Đọc số";
+            this.btnReadNumbers.UseVisualStyleBackColor = true;
+            this.btnReadNumbers.Click += new System.EventHandler(this.btnReadNumbers_Click);
+            // 
             // frmMainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 361);
             this.Controls.Add(this.btnFindMaxAndMin);
+            this.Controls.Add(this.btnReadNumbers);
             this.Controls.Add(this.btnAddName);
             this.Controls.Add(this.btnCheckMFO);
             this.Controls.Add(this.btnSum2Para);
@@ -108,5 +120,6 @@
         private System.Windows.Forms.Button btnCheckMFO;
         private System.Windows.Forms.Button btnAddName;
         private System.Windows.Forms.Button btnFindMaxAndMin;
+        private System.Windows.Forms.Button btnReadNumbers;
     }
 }

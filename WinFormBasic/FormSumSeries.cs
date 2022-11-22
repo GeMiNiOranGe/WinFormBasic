@@ -16,12 +16,30 @@ namespace WinFormBasic {
         }
 
         private void btnCalculate_Click(object sender, EventArgs e) {
-            int sum = 0;
-            int n = HandleInput.IntNumber(input.Text);
+            StringBuilder strBResultPower = new StringBuilder();
+            StringBuilder strBXPowerNum = new StringBuilder();
+            double sum = 0;
+            double n = HandleInput.IntNumber(inputN.Text);
+            double x = HandleInput.IntNumber(inputX.Text);
             for (int i = 1; i <= n; i++) {
-                sum += i;
+                double iNumTemp = Math.Pow(x, i);
+                strBResultPower.Append(iNumTemp.ToString() + "+");
+                sum += iNumTemp;
             }
-            output.Text = sum.ToString();
+            for (int i = 2; i <= n; i++) {
+                strBXPowerNum.Append("X^" + i + "+");
+            }
+            string strPower = "", strResultPower = "";
+            if (strBXPowerNum.ToString() != "") {
+                strPower = "X+" + strBXPowerNum.ToString().Remove(strBXPowerNum.Length - 1);
+            }
+            if (strBResultPower.ToString() != "") {
+                strResultPower = strBResultPower.ToString().Remove(strBResultPower.Length - 1);
+            }
+            txtBoxXPowerNum.Text = strPower;
+            txtBoxNumPowerNum.Text = strPower.Replace("X", x.ToString());
+            txtBoxResultPower.Text = strResultPower;
+            outputResult.Text = sum.ToString();
         }
 
         private void input_KeyPress(object sender, KeyPressEventArgs e) {

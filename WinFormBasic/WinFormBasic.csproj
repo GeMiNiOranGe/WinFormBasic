@@ -64,6 +64,12 @@
     <Compile Include="FormFindMinAndMax.Designer.cs">
       <DependentUpon>FormFindMinAndMax.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormReadNumbers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReadNumbers.Designer.cs">
+      <DependentUpon>FormReadNumbers.cs</DependentUpon>
+    </Compile>
     <Compile Include="HandleMain.cs" />
     <Compile Include="FormMainMenu.cs">
       <SubType>Form</SubType>
@@ -96,6 +102,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormMainMenu.resx">
       <DependentUpon>FormMainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReadNumbers.resx">
+      <DependentUpon>FormReadNumbers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormSimpleCalculate.resx">
       <DependentUpon>FormSimpleCalculate.cs</DependentUpon>

@@ -35,5 +35,9 @@ namespace WinFormBasic {
         private void btnFindMaxAndMin_Click(object sender, EventArgs e) {
             new frmFindMinAndMax().Show();
         }
+
+        private void btnReadNumbers_Click(object sender, EventArgs e) {
+            new frmReadNumbers().Show();
+        }
     }
 }
