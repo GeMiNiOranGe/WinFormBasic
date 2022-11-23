@@ -47,5 +47,19 @@ namespace WinFormBasic {
         private void btnMenuFood_Click(object sender, EventArgs e) {
             new frmMenuFood().Show();
         }
+
+        private void closeProgramToolStripMenuItem_Click(object sender, EventArgs e) {
+            Application.Exit();
+        }
+
+        private void maximunSizeToolStripMenuItem_Click(object sender, EventArgs e) {
+            if (this.WindowState == FormWindowState.Normal) {
+                this.WindowState = FormWindowState.Maximized;
+            }
+            else if (this.WindowState == FormWindowState.Maximized) {
+                this.WindowState = FormWindowState.Normal;
+            }
+        }
+
     }
 }
